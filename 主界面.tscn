@@ -1,0 +1,206 @@
+[gd_scene load_steps=3 format=3 uid="uid://jtfucqn7nmgt"]
+
+[ext_resource type="PackedScene" uid="uid://bmqkdli8n3p5l" path="res://词条选择.tscn" id="1_4ddmj"]
+[ext_resource type="Script" uid="uid://da3te6t0qlnfq" path="res://主界面.gd" id="1_41dxd"]
+
+[node name="主界面" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_41dxd")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="语言选择" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="中文" type="CheckBox" parent="VBoxContainer/语言选择"]
+layout_mode = 2
+button_pressed = true
+text = "中文"
+
+[node name="英文" type="CheckBox" parent="VBoxContainer/语言选择"]
+layout_mode = 2
+text = "English"
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "适用游戏版本：v1.6.1
+注意：
+1. 数值可以随意填写，且本工具不对代码可用性保证。若遇问题，请先确认自己设置的属性是否正常；若确定一切正常却仍无法使用，请发issue，给出完整截图。本工具不保证后续更新。
+2. 部分名称与游戏内不同，实际效果相同。
+3. 词条顺序基本与游戏内一致，请对照使用。
+4. 数值项须填整数，百分比项须填百分数实际对应的小数，负数项须填负数。"
+
+[node name="属性设置" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="类型选择" type="VBoxContainer" parent="VBoxContainer/属性设置"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="类型" type="Label" parent="VBoxContainer/属性设置/类型选择"]
+layout_mode = 2
+text = "类型"
+
+[node name="类型选择" type="MenuButton" parent="VBoxContainer/属性设置/类型选择"]
+layout_mode = 2
+text = "请选择..."
+alignment = 0
+item_count = 4
+popup/item_0/text = "圣物"
+popup/item_0/id = 0
+popup/item_1/text = "增幅石板"
+popup/item_1/id = 1
+popup/item_2/text = "猎场核心"
+popup/item_2/id = 2
+popup/item_3/text = "深渊之眼"
+popup/item_3/id = 3
+
+[node name="稀有度选择" type="VBoxContainer" parent="VBoxContainer/属性设置"]
+layout_mode = 2
+
+[node name="稀有度" type="Label" parent="VBoxContainer/属性设置/稀有度选择"]
+layout_mode = 2
+text = "稀有度"
+
+[node name="稀有度选择" type="MenuButton" parent="VBoxContainer/属性设置/稀有度选择"]
+layout_mode = 2
+text = "请选择..."
+alignment = 0
+item_count = 5
+popup/item_0/text = "普通"
+popup/item_0/id = 0
+popup/item_1/text = "稀有"
+popup/item_1/id = 1
+popup/item_2/text = "史诗"
+popup/item_2/id = 2
+popup/item_3/text = "传说"
+popup/item_3/id = 3
+popup/item_4/text = "混沌"
+popup/item_4/id = 4
+
+[node name="物品名称" type="VBoxContainer" parent="VBoxContainer/属性设置"]
+layout_mode = 2
+
+[node name="名称" type="Label" parent="VBoxContainer/属性设置/物品名称"]
+layout_mode = 2
+text = "物品名称"
+
+[node name="名称选择" type="MenuButton" parent="VBoxContainer/属性设置/物品名称"]
+layout_mode = 2
+text = "请选择..."
+alignment = 0
+
+[node name="词条" type="VBoxContainer" parent="VBoxContainer/属性设置"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/属性设置/词条"]
+layout_mode = 2
+text = "词条"
+
+[node name="词条1" type="HBoxContainer" parent="VBoxContainer/属性设置/词条"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/属性设置/词条/词条1"]
+layout_mode = 2
+text = "词条1"
+
+[node name="词条选择" parent="VBoxContainer/属性设置/词条/词条1" instance=ExtResource("1_4ddmj")]
+layout_mode = 2
+
+[node name="词条2" type="HBoxContainer" parent="VBoxContainer/属性设置/词条"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/属性设置/词条/词条2"]
+layout_mode = 2
+text = "词条2"
+
+[node name="词条选择" parent="VBoxContainer/属性设置/词条/词条2" instance=ExtResource("1_4ddmj")]
+layout_mode = 2
+
+[node name="词条3" type="HBoxContainer" parent="VBoxContainer/属性设置/词条"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/属性设置/词条/词条3"]
+layout_mode = 2
+text = "词条3"
+
+[node name="词条选择" parent="VBoxContainer/属性设置/词条/词条3" instance=ExtResource("1_4ddmj")]
+layout_mode = 2
+
+[node name="词条4" type="HBoxContainer" parent="VBoxContainer/属性设置/词条"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/属性设置/词条/词条4"]
+layout_mode = 2
+text = "词条4"
+
+[node name="词条选择" parent="VBoxContainer/属性设置/词条/词条4" instance=ExtResource("1_4ddmj")]
+layout_mode = 2
+
+[node name="词条5" type="HBoxContainer" parent="VBoxContainer/属性设置/词条"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/属性设置/词条/词条5"]
+layout_mode = 2
+text = "词条5"
+
+[node name="词条选择" parent="VBoxContainer/属性设置/词条/词条5" instance=ExtResource("1_4ddmj")]
+layout_mode = 2
+
+[node name="分享人" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/分享人"]
+layout_mode = 2
+text = "分享人："
+
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer/分享人"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "请输入..."
+
+[node name="寄语" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/寄语"]
+layout_mode = 2
+text = "寄语"
+
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer/寄语"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "请输入..."
+
+[node name="生成" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "生成"
+
+[node name="代码" type="TextEdit" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "待生成..."
+placeholder_text = "待生成..."
+editable = false
+emoji_menu_enabled = false
+wrap_mode = 1
+autowrap_mode = 1
+
+[node name="复制" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "复制"
+
+[connection signal="pressed" from="VBoxContainer/语言选择/中文" to="." method="_on_中文_pressed"]
+[connection signal="pressed" from="VBoxContainer/语言选择/英文" to="." method="_on_英文_pressed"]
+[connection signal="pressed" from="VBoxContainer/生成" to="." method="_on_生成_pressed"]
+[connection signal="pressed" from="VBoxContainer/复制" to="." method="_on_复制_pressed"]
