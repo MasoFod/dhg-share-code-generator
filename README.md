@@ -1,5 +1,5 @@
 # 漆黑猎场物品分享代码生成器
-[使用地址](https://masofod.github.io/dhg-share-code-generator](https://masofod.github.io/dhg-share-code-generator/release/)
+[使用地址](https://masofod.github.io/dhg-share-code-generator/release/)
 适用游戏版本：v1.6.1
 本工具目前仅支持中文。
 This tool currently only supports Chinese.
